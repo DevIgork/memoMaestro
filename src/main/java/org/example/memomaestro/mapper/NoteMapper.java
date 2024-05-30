@@ -17,8 +17,6 @@ public interface NoteMapper {
 
     Note toModel(NoteDtoUpdate noteDto);
 
-    Note toModel(NoteDto noteDto);
-
     @IterableMapping(qualifiedByName = "toDto")
     List<NoteDto> toDtos(List<Note> notes);
 }
